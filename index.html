@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasmanian Window Washing | Superior Home Services</title>
+    <style>
+        /* Modern CSS Variables for Branding */
+        :root {
+            --primary-blue: #0081C9;
+            --light-blue: #5BC0F8;
+            --accent-orange: #FF8E00;
+            --white: #ffffff;
+            --dark-text: #333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            color: var(--dark-text);
+            background-color: #f4f9ff;
+        }
+
+        /* Navigation */
+        nav {
+            background: var(--white);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-weight: bold;
+            color: var(--primary-blue);
+            font-size: 1.5rem;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--primary-blue);
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-orange);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 129, 201, 0.8), rgba(91, 192, 248, 0.8)), url('https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&q=80&w=1000');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background: var(--accent-orange);
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: transform 0.2s;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+        }
+
+        /* Content Sections */
+        section {
+            padding: 60px 10%;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-bottom: 5px solid var(--light-blue);
+        }
+
+        h2 {
+            color: var(--primary-blue);
+            border-bottom: 2px solid var(--accent-orange);
+            display: inline-block;
+            margin-bottom: 30px;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary-blue);
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+            margin-top: 40px;
+        }
+
+        .phone-number {
+            font-size: 1.5rem;
+            display: block;
+            margin: 15px 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .nav-links { display: none; } /* Simplified for demo */
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">🏠 SUPERIOR HOME SERVICES</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero" id="home">
+        <h1>Tasmanian Window Washing</h1>
+        <p>Streak-Free Windows in Brandon!</p>
+        <a href="tel:4317201220" class="btn">Call 431 720 1220</a>
+    </header>
+
+    <section id="services">
+        <center><h2>Why Choose Me?</h2></center>
+        <div class="grid">
+            <div class="card">
+                <h3>✨ Streak-Free</h3>
+                <p>I guarantee a crystal-clear shine every single time. No streaks, no spots.</p>
+            </div>
+            <div class="card">
+                <h3>💰 Affordable</h3>
+                <p>Quality service that won't break the bank. Pricing built for your budget.</p>
+            </div>
+            <div class="card">
+                <h3>🤝 Reliable</h3>
+                <p>Friendly, professional service from a local business owner you can trust.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" style="background-color: #ebf5ff;">
+        <div style="max-width: 800px; margin: auto; text-align: center;">
+            <h2>About Carver Campbell</h2>
+            <p>Hi there! I'm Carver Campbell. I'm 14 years old and I run a window washing business in Brandon.</p>
+            <p>I started this business to save up money for a dirt bike and gain some hands-on experience on running my own business. I take pride on making sure your windows shine!</p>
+            <p><strong>I WON'T DISAPPOINT!</strong></p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <center>
+            <h2>Get A Free Estimate</h2>
+            <p>Ready to make your home look like new? Give me a call or send a text!</p>
+            <div class="card" style="display: inline-block; min-width: 300px;">
+                <span class="phone-number">📞 431 720 1220</span>
+                <p>Serving Brandon and surrounding areas.</p>
+            </div>
+        </center>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Superior Home Services - Tasmanian Window Washing</p>
+        <p>Owned & Operated by Carver Campbell</p>
+    </footer>
+
+</body>
+</html>
